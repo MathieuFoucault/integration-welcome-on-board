@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+
+/* GENERAL */
+:root{
+    --primary-color: #a306b6;
+    --secondary-color: whitesmoke;
+    --article-color: #D9D9D9;
+    --footer-color: black;
+}
+
+*{
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family:'Monserrat', sans-serif;
+}
+
+body, h1, h2, h3{
+    margin: 0;
+}
+
+/* NAV HEADER */
+
+nav{
+    background-color:var(--primary-color) ;
+    color: var(--secondary-color);
+    width: 100%;
+    height : 50px;
+    padding-top: 10px;
+    display: flex;
+    justify-content :space-between;
+    align-items: center;
+}
+#logoW>img{
+    height: 30px;
+}
+#logoW>img{
+    height: 10vh;
+}
+
+header{
+    color: var(--secondary-color);
+    min-height: 50vh;
+    background-color:var(--primary-color) ;
+  }
+
+  /* RECENT ARTICLES */
+
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+    }
+.container h1{
+    font-size: 3rem;
+}
+.container img{
+    border: 3px solid var(--secondary-color);
+    border-radius: 50%;
+}
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    max-width: 65ch;
+}
+
+h2{
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.flexArticle{
+    padding: 10px;
+    margin-top: 20px;
+}
+.flexArticle ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.flexArticle li{
+    list-style: none;
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    background: var(--article-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.flexArticle img{
+    width: 70%;
+    justify-content: center;
+}
+li a{
+    background-color: var(--primary-color);
+    border-radius:10px ;
+    text-align: center;
+    font-size: 0.8em;
+}
+li h3{
+    margin: 0;
+    font-weight: bold;
+}
+
+/* ABOUT */
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10% 0 10%;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--article-color);
+    height: 150px;
+    color: var(--secondary-color);
+    padding: 10px 10px;
+    color: var(--footer-color);
+    text-align: center;
+    }
+footer img{
+    height: 10px;
+}
+footer a{
+    color: var(--primary-color);
+}
